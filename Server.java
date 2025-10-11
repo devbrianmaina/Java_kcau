@@ -14,6 +14,7 @@ class Server{
             PrintWriter(skt.getOutputStream(), true);
             System.out.print("Sending string:" + data + "'\n");
             out.print(data);
+            out.flush();
             out.close();
             skt.close();
             srvr.close();
