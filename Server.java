@@ -5,7 +5,7 @@ import java.io.*;
 class Server{
     public static void main(String[] args)
     {
-        String data = "Toobie ornaught toobie. Our REG 20/00510.\n";
+        String data = "Boop Toobie ornaught toobie. Our REG 20/00510.\n";
         try{
             ServerSocket srvr = new ServerSocket(1234);
             Socket skt = srvr.accept();
