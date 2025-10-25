@@ -2,10 +2,10 @@ import java.lang.*;
 import java.net.*;
 import java.io.*;
 
-class Server{
+class Assignment_1_Server{
     public static void main(String[] args)
     {
-        String data = "Boop Toobie ornaught toobie. Our REG 20/00510.\n";
+        String data = "  WINNING Class Presentation - Boop Toobie ornaught toobie. Our REG 20/00510.\n";
         try{
             ServerSocket srvr = new ServerSocket(1234);
             Socket skt = srvr.accept();

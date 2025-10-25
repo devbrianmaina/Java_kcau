@@ -2,7 +2,7 @@ import java.lang.*;
 import java.io.*;
 import java.net.*;
 
-class Client{
+class Assignment_1_Client{
     public static void main(String args[])
     {
         try{
