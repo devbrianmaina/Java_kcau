@@ -15,13 +15,38 @@ public class Assignment_2_server {
             // process with the info
             int number1;
             int number2;
-            int sum;
+            String operator;
+            double calculationResult;
+
             number1 = info.nextInt();
             number2 = info.nextInt();
-            sum = number1 + number2;
+            operator = info.next();
 
-            // giving back result to client
-            result.println(sum);
+            switch (operator) {
+                case "+":
+                    calculationResult = number1 + number2;
+                    result.println(calculationResult);
+                    break;
+                case "-":
+                    calculationResult = number1 - number2;
+                    result.println(calculationResult);
+                    break;
+                case "*":
+                    calculationResult = number1 * number2;
+                    result.println(calculationResult);
+                    break;
+                case "/":
+                    if (number2 != 0) {
+                        calculationResult = (double) number1 / number2;
+                        result.println(calculationResult);
+                    } else {
+                        result.println("Error: Division by zero is not allowed.");
+                    }
+                    break;
+                default:
+                    result.println("Error: Invalid operator.");
+                    break;
+            }
         }
     }
 }
